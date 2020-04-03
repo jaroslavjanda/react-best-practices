@@ -21,7 +21,8 @@ const Layout = ({ isAuthenticated, children, auth }) => {
           </HeaderLink>
         </HeaderSection>
         <HeaderSection>
-          <HeaderLink to={routes.BEST_PRACTICES}>Best Practices</HeaderLink>|
+          <HeaderLink to={routes.GET_STARTED}>Get Started</HeaderLink>|
+          <HeaderLink to={routes.BEST_PRACTICES}>Features</HeaderLink>|
           {isAuthenticated ? (
             <>
               <HeaderLink to={routes.PRIVATE}>Private</HeaderLink>|
