@@ -16,20 +16,6 @@ const BestPractices = () => {
           <Box>Redux</Box>
         </Link>
         <Box>
-          Architecture
-          <strong>
-            <div
-              style={{
-                textAlign: 'center',
-                marginTop: '64px',
-                fontSize: '16px',
-              }}
-            >
-              Not implemented yet
-            </div>
-          </strong>
-        </Box>
-        <Box>
           Fetching
           <strong>
             <div

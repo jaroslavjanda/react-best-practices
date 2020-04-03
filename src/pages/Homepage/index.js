@@ -3,7 +3,8 @@ import { H1, H3 } from '../../components/Typography'
 import Layout from '../../components/Layout'
 import { useApi } from '../../api/standart/useApi'
 import { Loader } from '../../components/Loader'
-import { getStudents } from './../../api/standart/students/studentApi'
+import { getStudents } from "../../api/standart/students/studentApi"
+import { ProfilePicture } from './styled'
 
 const Homepage = ({ auth, isAuthenticated }) => {
   const { data: students, isLoading } = useApi(() => getStudents(), [
@@ -25,15 +26,7 @@ const Homepage = ({ auth, isAuthenticated }) => {
       <H3 textAlign="center">
         Welcome {data ? `back ${data.given_name}` : 'citizen'}
       </H3>
-      {data && (
-        <div style={{ textAlign: 'center' }}>
-          <img
-            style={{ maxWidth: 50, maxHeight: 50, textAlign: 'center' }}
-            src={data.picture}
-            alt="profile pic"
-          />
-        </div>
-      )}
+      {data && <ProfilePicture src={data.picture} alt="profile pic" />}
       <div style={{ paddingTop: '32px', textAlign: 'center' }}>
         {isLoading && <div>Fetching....</div>}
         {isLoading && <Loader />}
