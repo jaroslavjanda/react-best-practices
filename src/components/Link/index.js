@@ -4,7 +4,7 @@ import theme from '../../common/theme'
 
 export default styled(Link)`
   text-decoration: none;
-  color: ${theme.color.pink};
+  color: ${theme.color.black};
   transition-duration: 0.3s;
 
   &:focus,

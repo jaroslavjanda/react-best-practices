@@ -19,7 +19,8 @@ export const Box = styled.div`
   background: ${theme.color.white};
   color: ${theme.color.black};
   font-weight: bold;
-  padding: 80px 0;
+  padding-top: 74px;
+  padding-bottom: 80px;
   transition: 0.3s;
   cursor: pointer;
 
