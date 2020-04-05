@@ -15,7 +15,11 @@ const Homepage = ({ auth, isAuthenticated }) => {
 
   return (
     <>
-      <H1 textAlign="center">Welcome on Homepage</H1>
+      <H1 textAlign="center" style={{ textTransform: 'uppercase' }}>
+        Welcome
+      </H1>
+      <H1 textAlign="center">Welcome</H1>
+      <H1 textAlign="center">welcome</H1>
       <H3 textAlign="center">
         {login ? `Welcome ${login.given_name}` : <div>You are not log in</div>}
       </H3>
