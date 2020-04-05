@@ -7,6 +7,28 @@ import { fontFamily } from 'styled-system'
 import theme from './common/theme'
 
 const GlobalStyles = createGlobalStyle`
+   @font-face {
+    font-family: "roboto";
+    src: url('font/Roboto.Light.ttf');
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: 'roboto';
+    src: url('font/Roboto-Medium.ttf');
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'roboto';
+    src: url('font/Roboto-Regular.ttf');
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: 'oswald';
+    src: url('font/Oswald-Regular.ttf');
+    font-weight: 400;
+  }
 
   * {
     -webkit-font-smoothing: antialiased;
@@ -19,7 +41,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
-   font-size: 65%;
+    font-size: 100%;
     width: 100vw;
     height: 100vh;
   }
@@ -28,12 +50,26 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: none;
   }
 
-  body {
-    font-size: ${theme.fontSize.medium};
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  h1 {
+    font-family: 'oswald', sans-serif;
     font-weight: 400;
-    color: ${theme.color.white};
-    background-color: ${theme.color.black};
+    font-size: 8.4rem
+  }
+
+  body {
+    font-size: 1rem;
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+    color: ${theme.color.black};
+    background-color: ${theme.color.white};
+  }
+
+  body.fontLoaded {
+    font-family: 'Oswald', 'Roboto', oswald, roboto, sans-serif;
+  }
+  #root {
+    width: 100vw;
+    height: 100vh;
   }
 
 `

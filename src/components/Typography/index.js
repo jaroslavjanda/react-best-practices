@@ -3,16 +3,16 @@ import { textAlign } from 'styled-system'
 import theme from '../../common/theme'
 
 const headerFonts = css`
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: oswald, serif;
   font-weight: 400;
-  color: ${theme.color.white};
+  color: ${theme.color.black};
   text-transform: uppercase;
   margin-bottom: 32px;
   ${textAlign}
 `
 
 export const H1 = styled.h1`
+  font-size: 4.4rem;
   ${headerFonts}
 `
 

@@ -10,16 +10,16 @@ export const Wrapper = styled.div`
 
 export const Box = styled.div`
   line-height: 120%;
-  text-shadow: rgba(0, 0, 0, 0.15) 0px 10px 20px;
+  text-shadow: rgba(27, 27, 27, 0) 0px 10px 20px;
   font-size: 22px;
   margin: 16px;
   border-radius: 24px;
   text-align: center;
   min-width: 240px;
   height: 240px;
-  border: 2px solid ${theme.color.pink};
+  border: 2px solid ${theme.color.oceanBlue};
   background: ${theme.color.blue};
-  color: white;
+  color: ${theme.color.black};
   font-weight: bold;
   text-align: left;
   padding: 26px 32px;

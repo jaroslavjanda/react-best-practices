@@ -5,7 +5,7 @@ import * as routes from '../../../routes'
 const Redux = ({ history }) => {
   return (
     <>
-      <H1 textAlign="center">👇 Redux 👇</H1>
+      <H1 textAlign="center">Redux</H1>
       <Button onClick={() => history.push(routes.REDUX_STUDENTS)}>
         I wanna see example 🤩
       </Button>

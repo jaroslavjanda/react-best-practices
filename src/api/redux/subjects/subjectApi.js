@@ -1,5 +1,5 @@
 import { handleResponse, handleError } from '../../apiUtils'
-import { baseUrl } from "../../baseUrl"
+import { baseUrl } from '../../baseUrl'
 
 const url = `${baseUrl}/subjects/`
 
