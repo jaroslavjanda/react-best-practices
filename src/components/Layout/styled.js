@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
 
 export const Header = styled.header`
   display: flex;
-  border-bottom: 0.5rem solid ${theme.color.pink};
+  border-bottom: 0.5rem solid ${theme.color.black};
   justify-content: space-between;
   padding: 3rem;
   width: 100%;
@@ -18,7 +18,7 @@ export const Header = styled.header`
 `
 
 export const HeaderSection = styled.div`
-  color: ${theme.color.pink};
+  color: ${theme.color.black};
   display: flex;
   flex-wrap: wrap;
 `
@@ -27,7 +27,7 @@ export const HeaderLink = styled(NavLink)`
   margin: 0 2rem;
   font-weight: normal;
   cursor: pointer;
-  color: ${theme.color.pink};
+  color: ${theme.color.black};
   text-decoration: none;
   transition-duration: 0.3s;
 

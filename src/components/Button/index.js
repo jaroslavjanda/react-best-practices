@@ -9,7 +9,7 @@ export const Button = styled.a`
   margin-top: 0.5rem;
   border: none;
   border-radius: ${theme.radius.basic};
-  color: ${theme.color.white};
+  color: ${theme.color.white} !important;
 `
 
 export const ButtonDiv = styled.button`

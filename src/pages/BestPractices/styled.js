@@ -9,27 +9,24 @@ export const Wrapper = styled.div`
 `
 
 export const Box = styled.div`
-  line-height: 120%;
   text-shadow: rgba(27, 27, 27, 0) 0px 10px 20px;
   font-size: 22px;
   margin: 16px;
   border-radius: 24px;
   text-align: center;
   min-width: 240px;
-  height: 240px;
-  border: 2px solid ${theme.color.oceanBlue};
-  background: ${theme.color.blue};
+  border: 2px solid ${theme.color.black};
+  background: ${theme.color.white};
   color: ${theme.color.black};
   font-weight: bold;
-  text-align: left;
-  padding: 26px 32px;
+  padding: 80px 0;
   transition: 0.3s;
   cursor: pointer;
 
   &:hover {
-    border: 2px solid ${theme.color.blue};
-    background: ${theme.color.pink};
-    color: black;
+    border: 2px solid ${theme.color.white};
+    background: ${theme.color.blue};
+    color: ${theme.color.white};
     transform: scale(1.1, 1.1);
     opacity: 1;
     transition: 0.3s;

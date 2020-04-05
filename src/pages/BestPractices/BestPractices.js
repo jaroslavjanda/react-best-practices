@@ -15,20 +15,7 @@ const BestPractices = () => {
         <Link to={routes.REDUX}>
           <Box>Redux</Box>
         </Link>
-        <Box>
-          Fetching
-          <strong>
-            <div
-              style={{
-                textAlign: 'center',
-                marginTop: '64px',
-                fontSize: '16px',
-              }}
-            >
-              Not implemented yet
-            </div>
-          </strong>
-        </Box>
+        <Box>Fetching</Box>
         <Link to={routes.COMPONENTS}>
           <Box>Components</Box>
         </Link>

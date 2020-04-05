@@ -16,10 +16,10 @@ const Homepage = ({ auth, isAuthenticated }) => {
   return (
     <>
       <H1 textAlign="center" style={{ textTransform: 'uppercase' }}>
-        Welcome 2
+        Welcome on React Best Practices
       </H1>
-      <H1 textAlign="center">Welcome</H1>
-      <H1 textAlign="center">welcome</H1>
+      <H3 textAlign="center">Lets dive into the best React approaches</H3>
+      <Button>Get Started</Button>
       <H3 textAlign="center">
         {login ? `Welcome ${login.given_name}` : <div>You are not log in</div>}
       </H3>
@@ -28,7 +28,6 @@ const Homepage = ({ auth, isAuthenticated }) => {
           <ProfilePicture src={login.picture} alt="profile pic" />
         </PictureWrapper>
       )}
-      <Button>Get Started</Button>
     </>
   )
 }

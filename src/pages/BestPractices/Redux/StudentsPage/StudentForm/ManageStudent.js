@@ -6,7 +6,8 @@ import { loadStudents, saveStudent } from '../../../../../redux/student/actions'
 import { loadSubjects } from '../../../../../redux/subject/actions'
 import newStudent from '../../../../../utils/server/mockData'
 import StudentForm from './StudentForm'
-import * as routes from './../../../../../routes'
+import * as routes from "../../../../../routes"
+
 const ManageStudent = ({
   history,
   students,

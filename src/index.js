@@ -6,10 +6,10 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import { Provider } from 'react-redux'
+import { createBrowserHistory } from 'history'
 import App from './App'
 import configureStore from './redux'
 import * as serviceWorker from './serviceWorker'
-import { createBrowserHistory } from 'history'
 
 const store = configureStore()
 const history = createBrowserHistory()
