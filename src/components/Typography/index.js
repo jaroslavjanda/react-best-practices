@@ -3,7 +3,7 @@ import { textAlign } from 'styled-system'
 import theme from '../../common/theme'
 
 const headerFonts = css`
-  font-family: oswald, serif;
+  font-family: Oswald, serif;
   font-weight: 400;
   color: ${theme.color.black};
   margin: 64px 0px;
@@ -16,5 +16,9 @@ export const H1 = styled.h1`
 `
 
 export const H3 = styled.h3`
-  ${headerFonts}
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  color: ${theme.color.black};
+  margin: 64px 0px;
+  ${textAlign}
 `

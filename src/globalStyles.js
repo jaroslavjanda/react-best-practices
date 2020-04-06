@@ -2,32 +2,34 @@ import 'sanitize.css'
 import 'react-toastify/dist/ReactToastify.css'
 
 import { createGlobalStyle } from 'styled-components'
-
-import { fontFamily } from 'styled-system'
 import theme from './common/theme'
-
 const GlobalStyles = createGlobalStyle`
    @font-face {
-    font-family: "roboto";
-    src: url('font/Roboto.Light.ttf');
-    font-weight: 300;
+    font-family: "Roboto";
+    src: url('font/Roboto.Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
   }
 
   @font-face {
-    font-family: 'roboto';
-    src: url('font/Roboto-Medium.ttf');
-    font-weight: 400;
+    font-family: 'Roboto';
+    src: url('font/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
   }
 
   @font-face {
-    font-family: 'roboto';
-    src: url('font/Roboto-Regular.ttf');
-    font-weight: 500;
+    font-family: 'Roboto';
+    src: url('font/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
   }
   @font-face {
-    font-family: 'oswald';
-    src: url('font/Oswald-Regular.ttf');
-    font-weight: 400;
+    font-family: 'Oswald';
+    src: local('Oswald'), url('font/Oswald-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
   }
 
   * {
@@ -51,21 +53,21 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h1 {
-    font-family: 'oswald', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-size: 8.4rem
   }
 
   body {
     font-size: 1rem;
-    font-family: 'roboto', sans-serif;
+    font-family: 'Roboto', 'Oswald', sans-serif;
     font-weight: 400;
     color: ${theme.color.black};
     background-color: ${theme.color.white};
   }
 
   body.fontLoaded {
-    font-family: 'Oswald', 'Roboto', oswald, roboto, sans-serif;
+    font-family: 'oswald', 'roboto', oswald, roboto, sans-serif;
   }
   #root {
     width: 100vw;
