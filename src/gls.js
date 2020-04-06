@@ -4,29 +4,31 @@ import 'react-toastify/dist/ReactToastify.css'
 import { createGlobalStyle } from 'styled-components'
 import theme from './common/theme'
 const GlobalStyles = createGlobalStyle`
+
   @font-face {
     font-family: 'Oswald';
     src: local('Oswald'), url('/font/Oswald-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
-   @font-face {
+
+  @font-face {
     font-family: "Roboto";
-    src: url('/font/Roboto.Light.ttf') format('truetype');
+    src: url('font/Roboto.Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'Roboto';
-    src: url('/font/Roboto-Medium.ttf') format('truetype');
+    src: url('font/Roboto-Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'Roboto';
-    src: url('/font/Roboto-Regular.ttf') format('truetype');
+    src: url('font/Roboto-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     
