@@ -7,11 +7,17 @@ const headerFonts = css`
   font-weight: 400;
   color: ${theme.color.black};
   margin: 64px 0px;
+  text-transform: uppercase;
   ${textAlign}
 `
 
 export const H1 = styled.h1`
   font-size: 4.4rem;
+  ${headerFonts}
+`
+
+export const H2 = styled.h1`
+  font-size: 3.4rem;
   ${headerFonts}
 `
 

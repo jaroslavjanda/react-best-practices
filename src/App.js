@@ -35,7 +35,11 @@ const App = () => {
             path={routes.HOMEPAGE}
             exact
             render={(_props) => (
-              <Homepage isAuthenticated={isAuthenticated} auth={auth} />
+              <Homepage
+                isAuthenticated={isAuthenticated}
+                auth={auth}
+                {..._props}
+              />
             )}
           />
           <Route
