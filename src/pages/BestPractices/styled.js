@@ -35,4 +35,11 @@ export const Box = styled.div`
     opacity: 1;
     transition: 0.3s;
   }
+  &:active {
+    background: ${theme.color.blue};
+    color: ${theme.color.black};
+    transform: scale(1.1, 1.1);
+    opacity: 1;
+    transition: 0.3s;
+  }
 `

@@ -7,9 +7,9 @@ import { H1 } from '../../components/Typography'
 import { Wrapper, Box } from './styled'
 import * as routes from '../../routes'
 import Link from '../../components/Link'
-import theme from "../../common/theme"
+import theme from '../../common/theme'
 
-const BestPractices = () => {
+const BestPractices = (props) => {
   return (
     <div
       style={{ backgroundColor: `${theme.color.black}`, minHeight: '100vh' }}
@@ -18,9 +18,13 @@ const BestPractices = () => {
         Features
       </H1>
       <Wrapper>
-        <Link to={routes.REDUX}>
-          <Box>Redux</Box>
-        </Link>
+        <Box
+          onClick={() => {
+            setTimeout(() => props.history.push(routes.REDUX), 150)
+          }}
+        >
+          Redux
+        </Box>
         <Box>Fetching</Box>
         <Link to={routes.COMPONENTS}>
           <Box>Components</Box>
