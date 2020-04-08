@@ -1,6 +1,7 @@
 import React from 'react'
 import TextInput from '../../../../../components/Inputs/TextInput'
 import SelectInput from '../../../../../components/Inputs/SelectInput'
+import { H1 } from "../../../../../components/Typography"
 
 const StudentForm = ({
   student,
@@ -11,11 +12,11 @@ const StudentForm = ({
   errors = {},
 }) => {
   return (
-    <div style={{ margin: '0px 30rem', textAlign: 'left' }}>
-      <form onSubmit={onSave}>
-        <h2 style={{ textAlign: 'center' }}>
-          {student.id ? 'Edit' : 'Add'} Student
-        </h2>
+    <div>
+      <H1 style={{ margin: '0px 1rem' }} textAlign="center">
+        {student.id ? 'Edit' : 'Add'} Student
+      </H1>
+      <form style={{ margin: '0px 5rem' }} onSubmit={onSave}>
         {errors.onSave && (
           <div className="alert alert-danger" role="alert">
             {errors.onSave}
