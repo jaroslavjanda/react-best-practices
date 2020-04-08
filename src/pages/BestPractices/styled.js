@@ -19,7 +19,7 @@ export const Box = styled.div`
   text-align: center;
   min-width: 240px;
   background: ${theme.color.black};
-  border: 3px solid ${theme.color.blue};
+  border: 3px solid ${theme.color.yellow};
   color: ${theme.color.white};
   font-weight: bold;
   padding-top: 74px;
@@ -29,14 +29,16 @@ export const Box = styled.div`
   cursor: pointer;
 
   &:hover {
-    background: ${theme.color.blue};
+    background: ${theme.color.yellow};
+    box-shadow: 5px 5px 10px 0px rgba(252, 191, 23, 0.31);
     color: ${theme.color.black};
     transform: scale(1.1, 1.1);
     opacity: 1;
     transition: 0.3s;
   }
   &:active {
-    background: ${theme.color.blue};
+    background: ${theme.color.yellow};
+    box-shadow: 5px 5px 15px 0px rgba(252, 191, 23, 0.31);
     color: ${theme.color.black};
     transform: scale(1.1, 1.1);
     opacity: 1;

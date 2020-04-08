@@ -16,7 +16,7 @@ export default styled(Link)`
   }
 
   &:hover {
-    color: ${theme.color.blue};
+    color: ${theme.color.yellow};
     transition-duration: 0.3s;
   }
 `

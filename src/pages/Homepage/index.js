@@ -5,6 +5,7 @@ import { H1, H2, H3 } from '../../components/Typography'
 import { ProfilePicture, PictureWrapper } from './styled'
 import { ButtonWrapper, Button } from '../../components/Button'
 import { Wrapper } from '../../components/Layout/styled'
+import { FancyButton } from "../../components/Button/FancyButton"
 
 const Homepage = ({ auth, isAuthenticated, ...props }) => {
   const [login, setlogin] = useState()
@@ -21,7 +22,7 @@ const Homepage = ({ auth, isAuthenticated, ...props }) => {
   return (
     <>
       <H1 textAlign="center">React Best Practices</H1>
-      <H3>Focus on features not boilerplate</H3>
+      <H3>Focus on features, not boilerplate</H3>
 
       <H2 textAlign="center">
         <ReactTypingEffect
@@ -35,17 +36,8 @@ const Homepage = ({ auth, isAuthenticated, ...props }) => {
       {console.log('Props', props)}
 
       <ButtonWrapper onClick={() => props.history.push('/get-started')}>
-        <Button style={{ padding: '1rem 3rem' }}>Get started</Button>
+        <FancyButton text="Get started" />
       </ButtonWrapper>
-
-      <span textAlign="center">
-        {login ? `Welcome ${login.given_name}` : <div>You are not log in</div>}
-      </span>
-      {login && (
-        <PictureWrapper>
-          <ProfilePicture src={login.picture} alt="profile pic" />
-        </PictureWrapper>
-      )}
     </>
   )
 }

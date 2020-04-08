@@ -45,5 +45,6 @@ module.exports = {
     'react/jsx-props-no-spreading': 1,
     'no-useless-catch': 1,
     'import/named': 1,
+    'jsx-a11y/anchor-is-valid': 1,
   },
 }

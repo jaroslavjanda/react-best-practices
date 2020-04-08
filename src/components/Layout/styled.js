@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
 
 export const Header = styled.header`
   display: flex;
-  border-bottom: 0.3rem solid ${theme.color.blue};
+  border-bottom: 0.3rem solid ${theme.color.yellow};
   justify-content: space-between;
   background-color: ${theme.color.black};
   padding: 1.5rem;
@@ -35,9 +35,9 @@ export const HeaderLink = styled(NavLink)`
   &:hover {
     transition-duration: 0.3s;
     text-decoration: none;
-    color: ${theme.color.blue};
+    color: ${theme.color.yellow};
   }
   &.active {
-    color: ${theme.color.blue};
+    color: ${theme.color.yellow};
   }
 `

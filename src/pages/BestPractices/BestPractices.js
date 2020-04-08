@@ -9,7 +9,7 @@ import * as routes from '../../routes'
 import Link from '../../components/Link'
 import theme from '../../common/theme'
 
-const BestPractices = (props) => {
+const BestPractices = ({ ...props }) => {
   return (
     <div
       style={{ backgroundColor: `${theme.color.black}`, minHeight: '100vh' }}
@@ -18,13 +18,16 @@ const BestPractices = (props) => {
         Features
       </H1>
       <Wrapper>
-        <Box
-          onClick={() => {
-            setTimeout(() => props.history.push(routes.REDUX), 150)
-          }}
+        {console.log(props)}
+        <Link
+          onClick={() =>
+            setTimeout(() => {
+              props.history.push(routes.REDUX)
+            }, 250)
+          }
         >
-          Redux
-        </Box>
+          <Box>Redux</Box>
+        </Link>
         <Box>Fetching</Box>
         <Link to={routes.COMPONENTS}>
           <Box>Components</Box>
