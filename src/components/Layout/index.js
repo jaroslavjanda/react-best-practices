@@ -17,7 +17,7 @@ const Layout = ({ isAuthenticated, children, auth }) => {
       <Header>
         <HeaderSection>
           <HeaderLink exact to={routes.HOMEPAGE}>
-            Home
+            | Best Practices
           </HeaderLink>
         </HeaderSection>
         <HeaderSection>

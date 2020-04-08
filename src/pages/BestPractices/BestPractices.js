@@ -1,16 +1,22 @@
 import React from 'react'
 
 import { toast } from 'react-toastify'
+import { minHeight } from 'styled-system'
 import { H1 } from '../../components/Typography'
 
 import { Wrapper, Box } from './styled'
 import * as routes from '../../routes'
 import Link from '../../components/Link'
+import theme from "../../common/theme"
 
 const BestPractices = () => {
   return (
-    <>
-      <H1 textAlign="center">Best Practises</H1>
+    <div
+      style={{ backgroundColor: `${theme.color.black}`, minHeight: '100vh' }}
+    >
+      <H1 textAlign="center" style={{ color: `${theme.color.white}` }}>
+        Features
+      </H1>
       <Wrapper>
         <Link to={routes.REDUX}>
           <Box>Redux</Box>
@@ -26,7 +32,7 @@ const BestPractices = () => {
           <Box>Toast success</Box>
         </div>
       </Wrapper>
-    </>
+    </div>
   )
 }
 
