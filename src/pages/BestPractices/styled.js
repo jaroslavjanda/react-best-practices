@@ -16,8 +16,8 @@ export const Box = styled.div`
   text-align: center;
   min-width: 240px;
   border: 2px solid ${theme.color.black};
-  background: ${theme.color.white};
-  color: ${theme.color.black};
+  background: ${theme.color.black};
+  color: ${theme.color.white};
   font-weight: bold;
   padding-top: 74px;
   padding-bottom: 80px;

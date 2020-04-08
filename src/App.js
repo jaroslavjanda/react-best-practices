@@ -16,7 +16,7 @@ import Libraries from './pages/BestPractices/Libraries'
 import Redux from './pages/BestPractices/Redux/ReduxPage'
 import ReduxStudentsPage from './pages/BestPractices/Redux/StudentsPage/StudentsPage'
 import ReduxStudentManagePage from './pages/BestPractices/Redux/StudentsPage/StudentForm/ManageStudent'
-
+import GetStarted from './pages/GetStarted'
 import LogIn from './pages/Login'
 import NotFound from './pages/NotFound'
 import Private from './pages/Private'
@@ -62,6 +62,8 @@ const App = () => {
             path={routes.REDUX_STUDENT}
             component={ReduxStudentManagePage}
           />
+
+          <Route path={routes.GET_STARTED} component={GetStarted} />
 
           <Route
             path={routes.LOGIN}

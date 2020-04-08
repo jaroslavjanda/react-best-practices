@@ -12,8 +12,8 @@ export const Button = styled.a`
   border-radius: ${theme.radius.basic};
   color: ${theme.color.white} !important;
   &:hover {
-    transform: translateY(-10px);
-    color: red;
+    transform: scale(1.1, 1.1);
+    transition: 0.3s;
   }
 `
 
@@ -28,16 +28,8 @@ export const ButtonDiv = styled.button`
   color: ${theme.color.white};
 `
 
-const Wrapper = styled.div`
+export const ButtonWrapper = styled.div`
   width: 100%;
   text-align: center;
   margin: 4em 0;
 `
-
-export const WrappedButton = ({ text, href }) => {
-  return (
-    <Wrapper>
-      <Button onClick={() => href}>{text}</Button>
-    </Wrapper>
-  )
-}

@@ -1,9 +1,9 @@
 const theme = {
   color: {
-    black: '#1B1B1B',
+    black: '#081b2e',
     white: '#FFFFFF',
     pink: '#FE3092',
-    blue: '#004DFF',
+    blue: '#fcbf17',
 
     oceanBlue: '#202637',
   },

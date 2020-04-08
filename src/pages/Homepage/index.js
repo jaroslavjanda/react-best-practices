@@ -3,7 +3,8 @@ import ReactTypingEffect from 'react-typing-effect'
 import Emoji from 'react-emoji-render'
 import { H1, H2, H3 } from '../../components/Typography'
 import { ProfilePicture, PictureWrapper } from './styled'
-import { WrappedButton, Button } from '../../components/Button'
+import { ButtonWrapper, Button } from '../../components/Button'
+import { Wrapper } from '../../components/Layout/styled'
 
 const Homepage = ({ auth, isAuthenticated, ...props }) => {
   const [login, setlogin] = useState()
@@ -32,10 +33,11 @@ const Homepage = ({ auth, isAuthenticated, ...props }) => {
         />
       </H2>
       {console.log('Props', props)}
-      <WrappedButton
-        href={() => props.history.push('get-started')}
-        text="Get Started"
-      />
+
+      <ButtonWrapper onClick={() => props.history.push('/get-started')}>
+        <Button style={{ padding: '1rem 3rem' }}>Get started</Button>
+      </ButtonWrapper>
+
       <span textAlign="center">
         {login ? `Welcome ${login.given_name}` : <div>You are not log in</div>}
       </span>

@@ -12,7 +12,7 @@ export const Header = styled.header`
   display: flex;
   border-bottom: 0.5rem solid ${theme.color.black};
   justify-content: space-between;
-  padding: 3rem;
+  padding: 1.5rem;
   width: 100%;
   flex-wrap: wrap;
 `
