@@ -2,10 +2,17 @@ import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 import theme from '../../common/theme'
 
-export const Wrapper = styled.div`
-  padding: 0rem;
-  margin: 0 0rem;
+export const Center = styled.div`
   text-align: center;
+`
+
+export const Wrapper = styled.div`
+  padding-top: 0rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 780px;
+  padding-right: 10px;
+  padding-left: 10px;
 `
 
 export const Header = styled.header`
@@ -40,4 +47,8 @@ export const HeaderLink = styled(NavLink)`
   &.active {
     color: ${theme.color.yellow};
   }
+`
+
+export const Footer = styled.div`
+  padding-top: 128px;
 `

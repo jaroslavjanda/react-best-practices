@@ -27,5 +27,10 @@ export const H3 = styled.h3`
   font-family: Oswald, sans-serif;
   font-weight: 400;
   color: ${theme.color.black};
-  ${textAlign}
+  ${headerFonts}
+  padding-top: 64px;
+  padding-bottom: 16px;
+`
+export const H4 = styled.h4`
+  ${headerFonts}
 `

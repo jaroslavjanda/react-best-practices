@@ -26,7 +26,13 @@ export const ButtonDiv = styled.button`
   margin-top: 0.5rem;
   border: none;
   border-radius: ${theme.radius.basic};
-  color: ${theme.color.white};
+  color: ${theme.color.white} !important;
+  transition: 0.3s;
+  &:hover {
+    transition: 0.3s;
+    box-shadow: 0px 7px 15px 0px rgba(252, 191, 23, 0.3);
+    transform: translateY(-4px);
+  }
 `
 
 export const ButtonWrapper = styled.div`

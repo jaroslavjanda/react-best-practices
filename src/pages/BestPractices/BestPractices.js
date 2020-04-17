@@ -6,7 +6,7 @@ import { H1 } from '../../components/Typography'
 
 import { Wrapper, Box } from './styled'
 import * as routes from '../../routes'
-import Link from '../../components/Link'
+import DelayedLink from '../../components/Link'
 import theme from '../../common/theme'
 
 const BestPractices = ({ ...props }) => {
@@ -19,22 +19,20 @@ const BestPractices = ({ ...props }) => {
       </H1>
       <Wrapper>
         {console.log(props)}
-        <Link
-          onClick={() =>
-            setTimeout(() => {
-              props.history.push(routes.REDUX)
-            }, 250)
-          }
-        >
-          <Box>Redux</Box>
-        </Link>
+        <DelayedLink
+          isDelayed={true}
+          to={routes.REDUX}
+          history={props.history}
+          content={<Box>Redux</Box>}
+        />
+
         <Box>Fetching</Box>
-        <Link to={routes.COMPONENTS}>
+        <DelayedLink to={routes.COMPONENTS}>
           <Box>Components</Box>
-        </Link>
-        <Link to={routes.LIBRARIES}>
+        </DelayedLink>
+        <DelayedLink to={routes.LIBRARIES}>
           <Box>Libraries</Box>
-        </Link>
+        </DelayedLink>
         <div onClick={() => toast.success('Hello I am success toast')}>
           <Box>Toast success</Box>
         </div>

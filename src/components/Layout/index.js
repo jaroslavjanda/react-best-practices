@@ -4,14 +4,18 @@ and layout which will be
 used on every page
 */
 
-import React, { Fragment } from 'react'
+import React, { useEffect } from 'react'
 
 import { withRouter } from 'react-router-dom'
 import * as routes from '../../routes'
 
-import { Wrapper, Header, HeaderSection, HeaderLink } from './styled'
+import { Header, HeaderSection, HeaderLink, Center, Footer } from './styled'
 
 const Layout = ({ isAuthenticated, children, auth }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+    return () => window.scrollTo(0, 0)
+  })
   return (
     <>
       <Header>
@@ -39,7 +43,8 @@ const Layout = ({ isAuthenticated, children, auth }) => {
           )}
         </HeaderSection>
       </Header>
-      <Wrapper>{children}</Wrapper>
+      <Center>{children}</Center>
+      <Footer></Footer>
     </>
   )
 }
