@@ -29,7 +29,7 @@ const DelayedLink = ({ isDelayed, to, history, content }) => {
         isDelayed
           ? setTimeout(() => {
               history.push(to)
-            }, 500)
+            }, 350)
           : history.push(to)
       }
     >

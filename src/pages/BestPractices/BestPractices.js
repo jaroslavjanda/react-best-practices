@@ -27,12 +27,11 @@ const BestPractices = ({ ...props }) => {
         />
 
         <Box>Fetching</Box>
-        <DelayedLink to={routes.COMPONENTS}>
-          <Box>Components</Box>
-        </DelayedLink>
-        <DelayedLink to={routes.LIBRARIES}>
-          <Box>Libraries</Box>
-        </DelayedLink>
+
+        <Box>Components</Box>
+
+        <Box>Libraries</Box>
+
         <div onClick={() => toast.success('Hello I am success toast')}>
           <Box>Toast success</Box>
         </div>
