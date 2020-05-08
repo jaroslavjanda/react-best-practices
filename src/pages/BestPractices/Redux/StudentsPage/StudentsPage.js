@@ -34,7 +34,7 @@ const StudentsPage = ({
   const onDelete = (student) => {
     toast.success('Student deleted')
     deleteStudent(student).catch((err) => {
-      toast.error(`Delete failed${  err}`)
+      toast.error(`Delete failed${err}`)
     })
   }
 

@@ -3,6 +3,7 @@ import 'react-toastify/dist/ReactToastify.css'
 
 import { createGlobalStyle } from 'styled-components'
 import theme from './common/theme'
+
 const GlobalStyles = createGlobalStyle`
 
   @font-face {

@@ -5,7 +5,7 @@ import { H1, H2, H3 } from '../../components/Typography'
 import { ProfilePicture, PictureWrapper } from './styled'
 import { ButtonWrapper, Button } from '../../components/Button'
 import { Wrapper } from '../../components/Layout/styled'
-import { FancyButton } from "../../components/Button/FancyButton"
+import { FancyButton } from '../../components/Button/FancyButton'
 
 const Homepage = ({ auth, isAuthenticated, ...props }) => {
   const [login, setlogin] = useState()

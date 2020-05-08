@@ -13,6 +13,7 @@ export const Wrapper = styled.div`
   max-width: 780px;
   padding-right: 10px;
   padding-left: 10px;
+  padding-bottom: 64px;
 `
 
 export const Header = styled.header`
@@ -20,7 +21,7 @@ export const Header = styled.header`
   border-bottom: 0.3rem solid ${theme.color.yellow};
   justify-content: space-between;
   background-color: ${theme.color.black};
-  padding: 1.5rem;
+  padding: 0rem 0rem;
   width: 100%;
   flex-wrap: wrap;
 `
@@ -38,6 +39,7 @@ export const HeaderLink = styled(NavLink)`
   color: ${theme.color.white};
   text-decoration: none;
   transition-duration: 0.3s;
+  padding: 1.5rem 0rem;
 
   &:hover {
     transition-duration: 0.3s;

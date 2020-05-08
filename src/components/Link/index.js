@@ -1,7 +1,8 @@
 import { Link as OriginalLink } from 'react-router-dom'
 import styled from 'styled-components'
-import theme from '../../common/theme'
 import React from 'react'
+import theme from '../../common/theme'
+
 const StyledLink = styled(OriginalLink)`
   text-decoration: none;
   color: ${theme.color.black};
@@ -22,19 +23,18 @@ const StyledLink = styled(OriginalLink)`
 `
 
 const DelayedLink = ({ isDelayed, to, history, content }) => {
-  console.log(history)
   return (
-    <StyledLink
+    <a
       onClick={() =>
         isDelayed
           ? setTimeout(() => {
               history.push(to)
-            }, 350)
+            }, 500)
           : history.push(to)
       }
     >
       {content}
-    </StyledLink>
+    </a>
   )
 }
 export default DelayedLink

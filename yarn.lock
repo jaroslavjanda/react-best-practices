@@ -3081,7 +3081,7 @@ code-point-at@^1.0.0:
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
   integrity sha1-DQcLTQQ6W+ozovGkDi7bPZpMz3c=
 
-"code-prettify@github:alex-milanov/code-prettify":
+code-prettify@alex-milanov/code-prettify:
   version "1.0.0"
   resolved "https://codeload.github.com/alex-milanov/code-prettify/tar.gz/ae9d5fbeb82870026456946b1934f2b876bb4525"
 

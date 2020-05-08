@@ -1,7 +1,7 @@
 import React from 'react'
 import TextInput from '../../../../../components/Inputs/TextInput'
 import SelectInput from '../../../../../components/Inputs/SelectInput'
-import { H1 } from "../../../../../components/Typography"
+import { H1 } from '../../../../../components/Typography'
 
 const StudentForm = ({
   student,

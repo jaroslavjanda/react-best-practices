@@ -8,7 +8,7 @@ import React, { useEffect } from 'react'
 
 import { withRouter } from 'react-router-dom'
 import * as routes from '../../routes'
-
+import logo4 from '../../resources/logo4.png'
 import { Header, HeaderSection, HeaderLink, Center, Footer } from './styled'
 
 const Layout = ({ isAuthenticated, children, auth }) => {
@@ -20,8 +20,14 @@ const Layout = ({ isAuthenticated, children, auth }) => {
     <>
       <Header>
         <HeaderSection>
-          <HeaderLink exact to={routes.HOMEPAGE}>
-            Best Practices
+          <HeaderLink
+            exact
+            to={routes.HOMEPAGE}
+            style={{ padding: '0px', paddingTop: '1rem' }}
+          >
+            <div style={{ height: '40px' }}>
+              <img src={logo4} alt="logo" height="100%" />
+            </div>
           </HeaderLink>
         </HeaderSection>
         <HeaderSection>
@@ -44,7 +50,6 @@ const Layout = ({ isAuthenticated, children, auth }) => {
         </HeaderSection>
       </Header>
       <Center>{children}</Center>
-      <Footer></Footer>
     </>
   )
 }

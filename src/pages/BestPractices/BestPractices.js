@@ -10,6 +10,7 @@ import DelayedLink from '../../components/Link'
 import theme from '../../common/theme'
 
 const BestPractices = ({ ...props }) => {
+  const { history } = props
   return (
     <div
       style={{ backgroundColor: `${theme.color.black}`, minHeight: '100vh' }}
@@ -18,11 +19,10 @@ const BestPractices = ({ ...props }) => {
         Features
       </H1>
       <Wrapper>
-        {console.log(props)}
         <DelayedLink
-          isDelayed={true}
+          isDelayed={1}
           to={routes.REDUX}
-          history={props.history}
+          history={history}
           content={<Box>Redux</Box>}
         />
 
