@@ -33,7 +33,7 @@ const GetStarted = ({ history }) => {
       <H2>1. Setup</H2>
       <Wrapper style={{}}>
         <Text>
-          The easiest way to learn someting new or check my work just clone the
+          The easiest way to learn someting new or check my work just clone this
           repo or visit the GitHub
         </Text>
         <Code codeString={setup} language="javascript" />
@@ -53,6 +53,7 @@ const GetStarted = ({ history }) => {
             <li>Husky</li>
             <li>Prettier</li>
             <li>.ENV</li>
+            <li>Netlify integration</li>
           </ul>
           <Text style={{ fontSize: theme.fontSize.normal, textAlign: "left" }}>
             Libraries with examples
