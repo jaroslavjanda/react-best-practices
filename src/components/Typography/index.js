@@ -6,7 +6,7 @@ const headerFonts = css`
   font-family: Oswald, serif;
   font-weight: 400;
   color: ${theme.color.black};
-  padding-top: 128px;
+  padding-top: 64px;
   padding-bottom: 64px;
   margin: 0px;
   text-transform: uppercase;

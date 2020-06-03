@@ -33,8 +33,6 @@ const Homepage = ({ auth, isAuthenticated, ...props }) => {
           typingDelay={500}
         />
       </H2>
-      {console.log('Props', props)}
-
       <ButtonWrapper onClick={() => props.history.push('/get-started')}>
         <FancyButton text="Get started" />
       </ButtonWrapper>
