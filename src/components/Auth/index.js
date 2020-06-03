@@ -56,6 +56,7 @@ export default class Auth {
     this.userProfile = null
     this.auth0.logout({
       returnTo: 'www.google.com',
+      clientID: process.env.REACT_APP_AUTH0_CLIENTID,
     })
   }
 
