@@ -55,7 +55,6 @@ export default class Auth {
     localStorage.removeItem('expires_at')
     this.userProfile = null
     this.auth0.logout({
-      clientID: process.env.REACT_APP_AUTH0_CLIENT_ID,
       returnTo: 'www.google.com',
     })
   }
