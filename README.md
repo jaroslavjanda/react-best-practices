@@ -1,3 +1,6 @@
+
+## Deployment: https://www.react-best-practices.com/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
